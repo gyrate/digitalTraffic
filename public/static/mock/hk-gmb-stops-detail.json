@@ -1,0 +1,62 @@
+{
+    "status": 200,
+    "data": {
+      "bus_stop": [
+        {
+          "co": "GMB",
+          "route": "74",
+          "description_en": "Normal Departure",
+          "description_tc": "正常班次",
+          "description_sc": "正常班次",
+          "orig_en": "KOWLOON STATION",
+          "orig_tc": "九龍站",
+          "orig_sc": "九龙站 ",
+          "dest_en": "Mong Kok (Luen Wan Street) (Circular)",
+          "dest_tc": "旺角(聯運街)(循環線)",
+          "dest_sc": "旺角(联运街)(循环线) ",
+          "next_station_en": "JORDAN ROAD, near Sorrento",
+          "next_station_tc": "佐敦道, 近擎天半島",
+          "next_station_sc": "佐敦道, 近擎天半岛 ",
+          "next": 720,
+          "eta": 12
+        },
+        {
+          "co": "GMB",
+          "route": "26",
+          "description_en": "Normal Route",
+          "description_tc": "正常班次",
+          "description_sc": "正常班次",
+          "orig_en": "To Kwa Wan (Chi Kiang Street)",
+          "orig_tc": "土瓜灣(浙江街)",
+          "orig_sc": "土瓜湾(浙江街)",
+          "dest_en": "Kowloon Station",
+          "dest_tc": "九龍站",
+          "dest_sc": "九龙站",
+          "next_station_en": "Jordan Road, near Sorrento Tower 5",
+          "next_station_tc": "佐敦道, 近擎天半島第五座",
+          "next_station_sc": "佐敦道, 近擎天半岛第五座",
+          "next": 300,
+          "eta": 5
+        },
+        {
+          "co": "GMB",
+          "route": "74S",
+          "description_en": "Supplementary Service Rout",
+          "description_tc": "額外服務班次",
+          "description_sc": "额外服务班次 ",
+          "orig_en": "Kowloon Station",
+          "orig_tc": "九龍站",
+          "orig_sc": "九龙站",
+          "dest_en": "Ho Man Tin Hill Road (Circular)",
+          "dest_tc": "何文田山道(循環線)",
+          "dest_sc": "何文田山道(循环线) ",
+          "next_station_en": "JORDAN ROAD, near Sorrento",
+          "next_station_tc": "佐敦道, 近擎天半島",
+          "next_station_sc": "佐敦道, 近擎天半岛 ",
+          "next": 240,
+          "eta": 4
+        }
+      ]
+    },
+    "message": ""
+  }

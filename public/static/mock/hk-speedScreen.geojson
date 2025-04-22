@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tai Po Road southbound near Sha Tin Racecourse",
+        "files": ["SJ1.en.png", "SJ1.tc.png", "SJ1.sc.png"],
+        "imgUrl": "https://resource.data.one.gov.hk/td/jss/sj1.en.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1832, 22.3948]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tate's Cairn Tunnel Road southbound near Shek Mun",
+        "files": ["SJ2.en.png", "SJ2.tc.png", "SJ2.sc.png"],
+        "imgUrl": "https://resource.data.one.gov.hk/td/jss/sj2.en.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.2065, 22.3792]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tolo Highway southbound near Science Park",
+        "files": ["SJ3.en.png", "SJ3.tc.png", "SJ3.sc.png"],
+        "imgUrl": "https://resource.data.one.gov.hk/td/jss/sj3.en.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1779, 22.4186]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Tin Highway southbound near Fairview Park",
+        "files": ["SJ4.en.png", "SJ4.tc.png", "SJ4.sc.png"],
+        "imgUrl": "https://resource.data.one.gov.hk/td/jss/sj4.en.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.0684, 22.4937]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tuen Mun Road southbound near Tseng Choi Street",
+        "files": ["SJ5.en.png", "SJ5.tc.png", "SJ5.sc.png"],
+        "imgUrl": "https://resource.data.one.gov.hk/td/jss/sj5.en.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.9832, 22.3765]
+      }
+    }
+  ]
+}

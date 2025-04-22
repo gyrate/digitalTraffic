@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href='style.xsl' type='text/xsl' media='screen'?>
+<rss version="2.0">
+	<channel>
+		<title>Environmental Protection Department - AQHI</title>
+		<link>http://www.aqhi.gov.hk</link>
+		<image>
+			<title>Environmental Protection Department - AQHI</title>
+			<link>http://www.aqhi.gov.hk</link>
+			<url>/epd/ddata/html/img/logo-main.png</url>
+		</image>
+		<description>Environmental Protection Department - AQHI</description>
+		<language>en-us</language>
+		<copyright>Environmental Protection Department</copyright>
+		<webMaster>enquiry@epd.gov.hk</webMaster>
+		<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+		<lastBuildDate>Tue, 18 Mar 2025 13:30:00 +0800</lastBuildDate>
+		<item>
+			<title>Central/Western : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Central/Western - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Southern : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Southern - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Eastern : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Eastern - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Kwun Tong : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Kwun Tong - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Sham Shui Po : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Sham Shui Po - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Kwai Chung : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Kwai Chung - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Tsuen Wan : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Tsuen Wan - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Tseung Kwan O : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Tseung Kwan O - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Yuen Long : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Yuen Long - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Tuen Mun : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Tuen Mun - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Tung Chung : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Tung Chung - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Tai Po : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Tai Po - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Sha Tin : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Sha Tin - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>North : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[North - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Tap Mun : 3 : Low</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Tap Mun - General Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Causeway Bay : 5 : High</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Causeway Bay - Roadside Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Central : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Central - Roadside Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+		<item>
+			<title>Mong Kok : 4 : Moderate</title>
+			<guid isPermaLink="true">http://www.aqhi.gov.hk/</guid>
+			<link>http://www.aqhi.gov.hk</link>
+			<pubDate>Tue, 18 Mar 2025 13:30:00 +0800</pubDate>
+			<description>
+				<![CDATA[Mong Kok - Roadside Stations: 4 Moderate - Tue, 18 Mar 2025 13:30]]>
+			</description>
+		</item>
+	</channel>
+</rss>

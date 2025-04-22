@@ -1,0 +1,145 @@
+[
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Live pig",
+      "INTAKE": 3251,
+      "UNIT": "(head)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Mainland",
+      "PROVIDED BY": "Food and Environmental Hygiene Department",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Live pig",
+      "INTAKE": 163,
+      "UNIT": "(head)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Local",
+      "PROVIDED BY": "Food and Environmental Hygiene Department",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Live cattle",
+      "INTAKE": 15,
+      "UNIT": "(head)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Mainland",
+      "PROVIDED BY": "Food and Environmental Hygiene Department",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Live cattle",
+      "INTAKE": "-",
+      "UNIT": "(head)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Local",
+      "PROVIDED BY": "Food and Environmental Hygiene Department",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Live chicken",
+      "INTAKE": 0,
+      "UNIT": "(bird)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Mainland",
+      "PROVIDED BY": "Government Cheung Sha Wan Temporary Wholesale Poultry Market",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Live chicken",
+      "INTAKE": 10580,
+      "UNIT": "(bird)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Local",
+      "PROVIDED BY": "Government Cheung Sha Wan Temporary Wholesale Poultry Market",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Marine fish",
+      "TYPE": "-",
+      "INTAKE": 89.12,
+      "UNIT": "(tonnes)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "-",
+      "PROVIDED BY": "Fish Marketing Organization",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Freshwater fish",
+      "TYPE": "-",
+      "INTAKE": 116.21,
+      "UNIT": "(tonnes)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "-",
+      "PROVIDED BY": "Government Cheung Sha Wan and Western Wholesale Food Markets and the private Yuen Long Freshwater Fish Market",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Vegetables",
+      "TYPE": "-",
+      "INTAKE": 114.32,
+      "UNIT": "(tonnes)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "-",
+      "PROVIDED BY": "Vegetable Marketing Organization",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Vegetables",
+      "TYPE": "-",
+      "INTAKE": 568.46,
+      "UNIT": "(tonnes)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "-",
+      "PROVIDED BY": "Government Wholesale Markets",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Eggs",
+      "TYPE": "-",
+      "INTAKE": 2920000,
+      "UNIT": "(nos)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "-",
+      "PROVIDED BY": "Government Cheung Sha Wan and Western Wholesale Markets",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Unsold live chicken",
+      "INTAKE": 0,
+      "UNIT": "(bird)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Mainland",
+      "PROVIDED BY": "Government Cheung Sha Wan Temporary Wholesale Poultry Market",
+      "Last_Revision_Date": "2025/3/19"
+    },
+    {
+      "CATEGORY": "Supply Figure",
+      "ENGLISH CATEGORY": "Livestock / Poultry",
+      "TYPE": "Unsold live chicken",
+      "INTAKE": 100,
+      "UNIT": "(bird)",
+      "INTAKE_DATE": "Yerterday",
+      "SOURCE": "Local",
+      "PROVIDED BY": "Government Cheung Sha Wan Temporary Wholesale Poultry Market",
+      "Last_Revision_Date": "2025/3/19"
+    }
+  ]

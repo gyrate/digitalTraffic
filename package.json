@@ -1,0 +1,27 @@
+{
+  "name": "digitaltraffic",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^25.0.0",
+    "3d-tiles-renderer": "^0.3.12",
+    "axios": "^1.7.7",
+    "dat.gui": "^0.7.9",
+    "html2canvas": "^1.4.1",
+    "lodash": "^4.17.21",
+    "sass": "^1.79.5",
+    "three": "^0.157.0",
+    "unplugin-auto-import": "^0.8.7",
+    "vue": "^3.2.25",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.4",
+    "vite": "^2.9.15"
+  }
+}
