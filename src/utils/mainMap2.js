@@ -1,6 +1,6 @@
 let mainMap = null
-const AMAP_KEY = '8281b6b8f40890205d2a2755b52dbfee'
-const AMAP_WEB_KEY = '93b5640f4cce94e61b1825bc2e833b1a'
+const AMAP_KEY = '8281b6b8f40890205d2a2755b52dbfee'//私人账号
+const AMAP_WEB_KEY = '7b442da06473f0bc978d0f8317fc35cd' //私人账号
 
 
 // 默认开启WebGL

@@ -1,7 +1,7 @@
 <script setup>
 import { getMap, initMap, getNavRoute } from '@/utils/mainMap2.js'
 import { fetchMockData } from '@/utils/mock.js'
-import GLlayer from '#/gl-layers/src/index'
+import GLlayer from '#/gl-layers/lib/index.mjs'
 import * as THREE from 'three' 
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import * as dat from 'dat.gui'
@@ -63,7 +63,7 @@ const allLayers = [
   { id: 'accidentLayer', name: '交通事件', visible: false },
   { id: 'stopLayer', name: '公共交通', visible: false },
   { id: 'cameraLayer', name: '交通摄像机', visible: false },
-  { id: 'trafficLayer', name: '交通情况', visible: true },
+  { id: 'trafficLayer', name: '交通情况', visible: false },
   { id: 'drivingLayer', name: '车辆行驶', visible: true },
   { id: 'buildingLayer', name: '建筑图层', visible: true },
   { id: 'wxLayer', name: '影像底层', visible: false },
@@ -193,7 +193,7 @@ window.setMapView = function ({ center, zoom, pitch, rotation }) {
 
 async function initLayers() {
   initWxLayer()
-  await initBuildingLayer()
+  //await initBuildingLayer()
   await initVehicleLayer()
   await initCameraLayer()
   await initTrafficLayer()
@@ -259,7 +259,9 @@ function initDragPoints(){
             Format: 'tiles',
             TileMatrixSet: 'w',
             STYLE: 'default',
-            tk: '54967da4ec3e8c505eeb317da0652fe9'
+            // 免费申请 TOKEN
+            // https://console.tianditu.gov.cn/api/key
+            tk: 'bb0abf278c1e848823bd136f7d11ca58'            
         },
         visible: true
     });
@@ -788,8 +790,8 @@ async function generateRoute(){
 
   // 路径规划结果
   const {coordinates, distance, duration, path} = res
-  const newCoordinates = coordinates.map(coord => gcj02towgs84(coord[0], coord[1]))
-  console.log(newCoordinates)
+  // const newCoordinates = coordinates.map(coord => gcj02towgs84(coord[0], coord[1]))
+  // console.log(newCoordinates)
 
   // 提取TMCs数据并转换为GeoJSON
   const tmcsFeatures = []
@@ -828,6 +830,8 @@ async function generateRoute(){
 
   // 缓存数据
   pathData = { features: [...tmcsFeatures] } 
+
+  console.log('pathData', pathData)
 
   // 如果已存在路径图层，更新路径数据
   const layer = layerManger.findLayerById('navPathLayer')
