@@ -124,8 +124,6 @@ async function init() {
   // const satelliteLayer = new AMap.TileLayer.Satellite();
   // map.add([satelliteLayer]);
 
-  // 给底图添加css滤镜
-  // document.querySelector('.amap-layer').style = 'filter:brightness(0.5) saturate(0.3) grayscale(0.5);'
   map.on('zoomend', (e) => {
     console.log(map.getZoom())
   })
@@ -193,7 +191,7 @@ window.setMapView = function ({ center, zoom, pitch, rotation }) {
 
 async function initLayers() {
   initWxLayer()
-  //await initBuildingLayer()
+  await initBuildingLayer()
   await initVehicleLayer()
   await initCameraLayer()
   await initTrafficLayer()
@@ -204,7 +202,7 @@ async function initLayers() {
 
   // 有个bug，在生成规划路径前先移动一下, 会导致共享数据的图层错位
   // PathLayer 似乎会影响customCoords.lngLatsToCoords
-  // await generateRoute()
+  await generateRoute()
 }
 
 //在地图上创建两个可拖动的点
@@ -640,11 +638,12 @@ async function initBuildingLayer() {
     title: '城市3D建筑图层',
     alone: SETTING.alone,
     map,
-    center: [114.207803, 22.319947], //重新调校后的中心
+    // center: [114.207803, 22.319947], //重新调校后的中心
+    center: [114.223346, 22.310921], //重新调校后的中心
     zooms: [4, 30],
     interact: false,
-    // tilesURL: 'http://localhost:9003/model/tQqeT8LGm/tileset0.json', // HK 无光照
-    tilesURL: 'http://localhost:9003/model/tQqeT8LGm/tileset0.json', // HK 
+    // tilesURL: 'http://localhost:9003/model/tQqeT8LGm/tileset0.json', // HK 
+    tilesURL: './static/3dtiles/guantang/tileset0.json', // local
     // altitude: 5,
     needShadow: true,
     visible: getLayerInitVisible('buildingLayer')
@@ -653,8 +652,13 @@ async function initBuildingLayer() {
 
   layer.on('complete', ({ scene, renderer }) => {
     // 调整模型的亮度
-    const aLight = new THREE.AmbientLight(0xffffff, 1.5)
+    const aLight = new THREE.AmbientLight(0xffffff, 1.0)
     scene.add(aLight)
+
+    // 添加侧面打光
+    const sideLight = new THREE.DirectionalLight(0xffffff, 2.5)
+    sideLight.position.set(-1000, 1000, 1000)
+    scene.add(sideLight)
   })
 
 }
@@ -977,13 +981,13 @@ function initGUI() {
 // 回到中心
 function gotoCenter() {
   setMapView({
-      "center": [
-          114.208903,
-          22.321113
-      ],
-      "zoom": 18.03,
-      "pitch": 58.18181818181819,
-      "rotation": -46.30000000000002
+    "center": [
+        114.216678,
+        22.316946
+    ],
+    "zoom": 15.95,
+    "pitch": 48.27272727272729,
+    "rotation": -19.799999999999983
   })
 }
 
