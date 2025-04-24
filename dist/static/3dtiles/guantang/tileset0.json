@@ -1,0 +1,133 @@
+{
+    "asset": {
+        "generatetool": "cesiumlab2@www.cesiumlab.com/model2tiles",
+        "version": "1.0"
+    },
+    "extras": {
+        "scenetree": "scenetree.json"
+    },
+    "geometricError": 5403.52397169033,
+    "properties": {
+        "gml_id": {
+            "extras": {
+                "group": "",
+                "id": "945b4cc56f8aebbb44dd3599a69a596e",
+                "name": "gml_id",
+                "type": "string",
+                "unittype": ""
+            },
+            "maximum": -2147483647.0,
+            "minimum": 2147483647.0
+        },
+        "height": {
+            "extras": {
+                "group": "",
+                "id": "9c0449de2539cf3bbce0194aa532d778",
+                "name": "height",
+                "type": "double",
+                "unittype": ""
+            },
+            "maximum": 433.0,
+            "minimum": 6.0
+        },
+        "objectid": {
+            "extras": {
+                "group": "",
+                "id": "549d890f5dd76ecdf8fbc9d3aff1a369",
+                "name": "objectid",
+                "type": "int32_t",
+                "unittype": ""
+            },
+            "maximum": 14356624.0,
+            "minimum": 14317049.0
+        },
+        "shape_area": {
+            "extras": {
+                "group": "",
+                "id": "ed7652a17a905fb4118c987bcd096e4e",
+                "name": "shape_area",
+                "type": "double",
+                "unittype": ""
+            },
+            "maximum": 1.744181527e-06,
+            "minimum": 7.53e-13
+        },
+        "shape_leng": {
+            "extras": {
+                "group": "",
+                "id": "474306dfb45dd283df55d77481403c72",
+                "name": "shape_leng",
+                "type": "double",
+                "unittype": ""
+            },
+            "maximum": 0.00949207075946,
+            "minimum": 4.618892361e-06
+        }
+    },
+    "refine": "REPLACE",
+    "root": {
+        "boundingVolume": {
+            "box": [
+                4.65661287307739e-10,
+                0.164498914731666,
+                217.500033877324,
+                2234.28692958504,
+                0,
+                0,
+                0,
+                2701.76198584517,
+                0,
+                0,
+                0,
+                216.500031907577
+            ]
+        },
+        "children": [
+            {
+                "boundingVolume": {
+                    "box": [
+                        0.206903546582907,
+                        0.0926683377474546,
+                        218.022954323795,
+                        2233.72520986293,
+                        0,
+                        0,
+                        0,
+                        2701.56123135984,
+                        0,
+                        0,
+                        0,
+                        216.939264121
+                    ]
+                },
+                "content": {
+                    "uri": "NoLod_0.b3dm"
+                },
+                "geometricError": 0.0,
+                "refine": "REPLACE"
+            }
+        ],
+        "geometricError": 5403.52397169033,
+        "transform": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ]
+    }
+}

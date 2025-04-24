@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name=" 图层 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #efefef;
+        opacity: .5;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        opacity: .8;
+      }
+
+      .cls-4 {
+        fill: url(#_未命名的渐变_27);
+      }
+    </style>
+    <radialGradient id="_未命名的渐变_27" data-name="未命名的渐变 27" cx="12.6" cy="57.1" fx="12.6" fy="57.1" r="11.3" gradientTransform="translate(0 62) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdf5c5"/>
+      <stop offset=".2" stop-color="#fcd103"/>
+      <stop offset=".3" stop-color="#fccd00"/>
+      <stop offset=".7" stop-color="#f1942e"/>
+      <stop offset=".9" stop-color="#ea652d"/>
+      <stop offset="1" stop-color="#e5352b"/>
+    </radialGradient>
+  </defs>
+  <ellipse class="cls-2" cx="10" cy="57.8" rx="3.4" ry="2"/>
+  <line class="cls-1" x1="10" y1="9.4" x2="10" y2="57.1"/>
+  <ellipse class="cls-4" cx="10" cy="9" rx="9" ry="8.9"/>
+  <ellipse class="cls-3" cx="10" cy="57.1" rx="2.1" ry="1.2"/>
+</svg>
