@@ -4,7 +4,7 @@ import { fetchMockData } from '@/utils/mock.js'
 import GLlayer from '#/gl-layers/lib/index.mjs'
 import * as THREE from 'three' 
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import * as dat from 'dat.gui'
+// import * as dat from 'dat.gui'
 import {wgs84togcj02, gcj02towgs84} from '../utils/lngLat.js'
 
 const { 
@@ -27,28 +27,6 @@ const layerManger = new LayerManager()
 // 是否第一人称
 let isFirstView = false
 
-// 无人机动画混合器
-let mixer
-
-// 场景参数控制
-let directionalLight
-let gui
-var guiCtrl = {
-  lightPositionX: 1000,
-  lightPositionY: 1000,
-  lightPositionZ: 1600,
-  cameraNear: 0,
-  caremaFar: 20000,
-  cameraLeft: -5000,
-  cameraRight: 5000,
-  cameraTop: 5000,
-  cameraBottom: -5000,
-  mapSize: 2048, // 1024
-  planeMaterialOpacity: 0.5,
-  intetity: 2.5,
-  mixerPlaySpeed: 5
-};
-
 // 交通事件类型图标
 var ACCIDENT_ICONS = {
     201: './static/icons/accident/traffic-control.png',
@@ -60,6 +38,7 @@ var ACCIDENT_ICONS = {
 };
 
 const allLayers = [ 
+  { id: 'navPathLayer', name: '规划路线图层', visible: true },
   { id: 'accidentLayer', name: '交通事件', visible: false },
   { id: 'stopLayer', name: '公共交通', visible: false },
   { id: 'cameraLayer', name: '交通摄像机', visible: false },
@@ -196,8 +175,9 @@ async function initLayers() {
   await initCameraLayer()
   await initTrafficLayer()
   await initBusStopLayer()
-  // await initAccidentLayer()
+  await initAccidentLayer()
 
+  // 导航路线图层
   await initNavPathLayer()
 
   // 有个bug，在生成规划路径前先移动一下, 会导致共享数据的图层错位
@@ -288,7 +268,7 @@ async function initNavPathLayer() {
       getStyle: (feature) => {
         return feature.properties.status
       },
-      altitude: 45, // 设置高度，避免与地面重叠
+      altitude: 5, // 设置高度，避免与地面重叠
       zooms: [3, 22],
       interact: true,
       alone: SETTING.alone
@@ -573,7 +553,7 @@ async function initVehicleLayer() {
     map,
     zooms: [4, 30],
     path: data,
-    altitude: 25,
+    altitude: 5,
     speed: 40.0,
     NPC,
     alone: SETTING.alone,
@@ -597,7 +577,7 @@ async function initVehicleLayer() {
     data,
     speed: 0.5,
     lineWidth: 10,
-    altitude: 25,
+    altitude: 0,
     alone: SETTING.alone,
   })
   // movePathLayer.on('complete', ({ scene }) => {
@@ -639,7 +619,7 @@ async function initBuildingLayer() {
     alone: SETTING.alone,
     map,
     // center: [114.207803, 22.319947], //重新调校后的中心
-    center: [114.223346, 22.310921], //重新调校后的中心
+    center: [114.224455, 22.310166], //重新调校后的中心
     zooms: [4, 30],
     interact: false,
     // tilesURL: 'http://localhost:9003/model/tQqeT8LGm/tileset0.json', // HK 
@@ -694,7 +674,7 @@ async function initTrafficLayer() {
         return 0
       }
     },
-    altitude: 40,
+    altitude: 10,
     zooms: [10, 22],
     interact: true,
     alone: SETTING.alone,
@@ -766,8 +746,9 @@ function toggleLayer(layerId) {
       break;
     default:
       const layer = layerManger.findLayerById(layerId)      
-      if (layer) {
-        const fn = (layer.visible ?? layer.getVisible()) ? 'hide' : 'show'
+      if (layer) {        
+        const fn = (layer.visible ?? layer.getVisible()) ? 'hide' : 'show'        
+        console.log('fn', fn)
         layer[fn]()
       }
       break;
@@ -839,9 +820,12 @@ async function generateRoute(){
 
   // 如果已存在路径图层，更新路径数据
   const layer = layerManger.findLayerById('navPathLayer')
-  if (layer) {
-    layer.setData(pathData)
-    layer.show()
+  if (layer) {   
+    // 必须要显示延迟后，才能更新数据！
+    layer.show()  
+    setTimeout(()=>{
+      layer.setData(pathData)  
+    }, 100)          
   }
 
 }
@@ -897,85 +881,7 @@ function toggleVehicleView() {
 
 // 调节参数
 function initGUI() {
-  gui = new dat.GUI();
-  var lightFolder = gui.addFolder("Directional Light");
-  var shadowFolder = gui.addFolder("Shadow Camera");
-  var otherFolder = gui.addFolder("Other Setting");
-
-  // 控制光源位置
-  lightFolder
-    .add(directionalLight.position, "x", 0, 10000)
-    .name("Position X");
-  lightFolder
-    .add(directionalLight.position, "y", 0, 10000)
-    .name("Position Y");
-  lightFolder
-    .add(directionalLight.position, "z", 0, 10000)
-    .name("Position Z");
-  lightFolder.add(directionalLight, "intensity", 0, 3).name("Intensity");
-
-  // 控制阴影相机参数
-  shadowFolder
-    .add(directionalLight.shadow.camera, "near", 0, 1)
-    .step(0.01)
-    .onChange(function (value) {
-      directionalLight.shadow.camera.near = value;
-      directionalLight.shadow.camera.updateProjectionMatrix();
-    });
-  shadowFolder
-    .add(directionalLight.shadow.camera, "far", 10000, 1000000)
-    .step(10)
-    .onChange(function (value) {
-      directionalLight.shadow.camera.far = value;
-      directionalLight.shadow.camera.updateProjectionMatrix();
-    });
-  shadowFolder
-    .add(directionalLight.shadow.camera, "left", -5000, 5000)
-    .step(1)
-    .onChange(function (value) {
-      directionalLight.shadow.camera.left = value;
-      directionalLight.shadow.camera.updateProjectionMatrix();
-    });
-  shadowFolder
-    .add(directionalLight.shadow.camera, "right", -5000, 5000)
-    .step(1)
-    .onChange(function (value) {
-      directionalLight.shadow.camera.right = value;
-      directionalLight.shadow.camera.updateProjectionMatrix();
-    });
-  shadowFolder
-    .add(directionalLight.shadow.camera, "top", -5000, 5000)
-    .step(1)
-    .onChange(function (value) {
-      directionalLight.shadow.camera.top = value;
-      directionalLight.shadow.camera.updateProjectionMatrix();
-    });
-  shadowFolder
-    .add(directionalLight.shadow.camera, "bottom", -5000, 5000)
-    .step(1)
-    .onChange(function (value) {
-      directionalLight.shadow.camera.bottom = value;
-      directionalLight.shadow.camera.updateProjectionMatrix();
-    });
-
-  otherFolder
-    .add(guiCtrl, "mapSize", 2, 2048)
-    .step(1)
-    .onChange(function (value) {
-      directionalLight.shadow.mapSize.width = value;
-      directionalLight.shadow.mapSize.height = value;
-    });
-  otherFolder
-    .add(guiCtrl, "mixerPlaySpeed", 0, 10)
-    .step(0.1)
-    .onChange(function (value) {
-      const action = mixer._actions[0]
-      action.setEffectiveTimeScale(value);
-    });
-
-  lightFolder.open();
-  shadowFolder.open();
-  otherFolder.open();
+  // gui = new dat.GUI();
 }
 
 // 回到中心
